@@ -1,26 +1,35 @@
 # findNames.py
 #
-# This file reads the script and finds all the speaking
-# character roles by finding all words that are in all
-# uppercases. The names are put into a list to be used
-# in the parser.
-############################################
+# findNames.py reads the script *file* and parses out all the speaking
+# character roles by finding any words that are in all uppercases. The
+# names are put into a dictionary, which I printed out and saved to
+# output_findNames_*file*.txt. I manually reviewed the list and saved
+# all character names to be used in parser.py in names_*file*.txt.
+###########################################
 
 import re
 
-# with open('LOTRs.txt', 'r') as f:
-with open('LOTRsFellowshipOfTheRing.txt', 'r') as f:
+# update to location of file script to be used
+file = 'LOTRsFellowshipOfTheRing.txt'
+
+with open(file, 'r') as f:
     lines = f.readlines()
 
+characterDict = {}
 
 for line in lines:
-    # matches = re.findall(
-    #     r"(\b(?:[A-Z]+[a-z]?[A-Z]*|[A-Z]*[a-z]?[A-Z]+)\b(?:\s+(?:[A-Z]+[a-z]?[A-Z]*|[A-Z]*[a-z]?[A-Z]+)\b)*)", line)
-    #     r"(\b[A-Z][A-Z]+\b)", line)
-    #     r"(\b[A-Z]+(?:\s+[A-Z]+)*\b)", line)
-
     matches = re.findall(
         r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
 
     if len(matches) > 0:
-        print(matches)
+        for name in matches:
+            if name not in characterDict:
+                characterDict[name] = 1
+            else:
+                i = characterDict[name]
+                characterDict.update({name: i+1})
+
+# only show characters with at least 5 lines
+for x, y in characterDict.items():
+    if y > 5:
+        print(y, x)
