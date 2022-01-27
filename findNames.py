@@ -5,7 +5,7 @@
 # names are put into a dictionary, which I printed out and saved to
 # output_findNames_*file*.txt. I manually reviewed the list and saved
 # all character names to be used in parser.py in names_*file*.txt.
-###########################################
+##########################################################################
 
 import re
 
