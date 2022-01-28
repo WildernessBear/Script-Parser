@@ -489,7 +489,7 @@ Frodo shoots a knowing look, as Gandalf averts his eyes.
           you came along we Bagginses were very
           well thought of.
 
-                       GANDALF
+                    GANDALF
           Indeed?
 
                     FRODO
@@ -674,7 +674,7 @@ mysteriously appears behind him.
                     GANDALF
           Just tea, thank you.
 
-                       BILBO
+                    BILBO
           Oh..right.     You don't mind if...?
 
                     GANDALF
@@ -1542,7 +1542,7 @@ within.
 
 CLOSE ON: GANDALF...STILL...TENSE
 
-                    FRO DO
+                    FRODO
           It's some form of Elvish...I can't read
           it.
 
@@ -1552,14 +1552,15 @@ CLOSE ON: GANDALF...STILL...TENSE
           that of Mordor, which I will not utter
           here.
 
-Mordor?
-
                     FRODO
-          GANDALF
+          Mordor?
 
-In the common tongue it says, "One ring to rule them all, One
-ring to find them, One ring to bring them all, and in the
-darkness bind them."
+                    GANDALF
+
+          In the common tongue it says, "One ring 
+          to rule them all, One ring to find them, 
+          One ring to bring them all, and in the
+          darkness bind them."
 
                                                         CUT TO:
 
@@ -5218,7 +5219,7 @@ CONTINUED:
 Frodo's POV: a sudden glimpse of a creature darting in the
 darkness. Frodo is nervous...he approaches Gandalf.
 
-                    FRO DO
+                    FRODO
               (whispers)
           There's something down there.
 
