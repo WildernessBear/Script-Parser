@@ -37,6 +37,7 @@ i = 0
 
 for line in lines:
 
+    # character name was found
     if appendLine:
         quote.append(line)
         characterDict[uppercase[i]].append(quote)

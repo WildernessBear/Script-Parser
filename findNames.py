@@ -18,9 +18,12 @@ with open(file, 'r') as f:
 characterDict = {}
 
 for line in lines:
+
+    # find character names
     uppercase = re.findall(
         r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
 
+    # totally up how many speaking blocks they have
     if len(uppercase) > 0:
         for name in uppercase:
             if name not in characterDict:
