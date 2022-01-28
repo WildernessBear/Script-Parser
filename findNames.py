@@ -18,11 +18,11 @@ with open(file, 'r') as f:
 characterDict = {}
 
 for line in lines:
-    matches = re.findall(
+    uppercase = re.findall(
         r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
 
-    if len(matches) > 0:
-        for name in matches:
+    if len(uppercase) > 0:
+        for name in uppercase:
             if name not in characterDict:
                 characterDict[name] = 1
             else:
