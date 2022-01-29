@@ -6,7 +6,6 @@
 # a nested empty list. The nested list will hold the character lines in
 # the order they appear from the script in *file*.txt
 ##########################################################################
-from lib2to3.pgen2.token import NEWLINE
 import re
 
 # replace with files to be read
@@ -30,43 +29,69 @@ for name in names:
 with open(file, 'r') as f:
     lines = f.readlines()
 
+
 quote = []
 uppercase = []
-startOfLineBlock = False
-keepAppending = False
-i = 0
+inDialogueBlock = False
+endOfDialogueBlock = False
+foundCharacterName = False
 
 for line in lines:
 
-    # character name was found, add line to quote text
-    if startOfLineBlock:
-        quote.append(line)
+    input(" ")
+    print(line)
 
-        # MOVE
-        # quote block is over, append quote to character
-        # list inside character dictionary
+    # character name was found, add line to quote text
+    if inDialogueBlock:
+
+        print("---------------------")
+        print("Block started:")
+
+        quote.append(line)
+        inDialogueBlock = False
+        endOfDialogueBlock = True
+
+    # charcter dialouge ended, append quote to corresponding
+    # character in the dictionary at next index in list
+    if endOfDialogueBlock:
+
+        print("Block Ended")
+        print("Quote is:")
+        print(quote)
+        print("---------------------")
+
         characterDict[uppercase[i]].append(quote)
         quote = []
-        startOfLineBlock = False
-        keepAppending = False
+        inDialogueBlock = False
+        endOfDialogueBlock = False
 
-    # find uppercase words in script
-    uppercase = re.findall(r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
-
-    # see if uppercase word is a main character
+    # find uppercase words in script then check
+    # if uppercase word is also a main character
     i = 0
+    foundCharacterName = False
+    uppercase = re.findall(r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
     index = len(uppercase)
+
+    name = ""
     if index > 0:
         while i < index:
+
+            print(uppercase[i] + " i = " + str(i) + " index = " + str(index))
+
             if uppercase[i] in characterList:
+
+                name = uppercase[i]
+                print("Found name: " + name)
                 foundCharacterName = True
                 break
             i = i+1
 
         if foundCharacterName == True:
 
-            # check that this starts a speaking
-            # section and is not a scene description
+            print(name)
+
+            # check that this starts a speaking section
+            # and is not part of a scene description
             if re.search("   " + str(uppercase[i]) + "\n", line):
                 block = True
             else:
@@ -74,19 +99,29 @@ for line in lines:
 
             # if it is a voice over (V.O.) then
             # character name will not be followed by newline
-            voiceOver = re.findall(r"\B\(V\.O\.\)", line)
+            if re.findall(r"\B\(V\.O\.\)", line):
+                voiceOver = True
+            else:
+                voiceOver = False
 
             # if it is continuation (CONT'D) then
             # character name will not be followed by newline
-            continuation = re.findall(r"\(CONT\'D\)\B", line)
+            if re.findall(r"\(CONT\'D\)\B", line):
+                continuation = True
+            else:
+                continuation = False
 
             # if it is a line off screen (O.S) then
             # character name will not be followed by newline
-            offScreen = re.findall(r"\(O\.S\.\)\B", line)
+            if re.findall(r"\(O\.S\.\)\B", line):
+                offScreen = True
+            else:
+                offScreen = False
 
             if block or voiceOver or continuation or offScreen:
-                startOfLineBlock == True
+                inDialogueBlock = True
+            else:
+                inDialogueBlock = False
 
-
-# for x, y in characterDict.items():
-#     print(x, y)
+for x, y in characterDict.items():
+    print(x, y)
