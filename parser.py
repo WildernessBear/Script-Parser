@@ -38,20 +38,19 @@ foundCharacterName = False
 
 for line in lines:
 
-    input(" ")
+    #input(" ")
     # print(line)
 
     # character name was found, add line to quote text
     if inDialogueBlock:
 
-        print("---------------------")
-        print("Block started:")
+        # print("---------------------")
+        # print("Block started:")
 
         if line == '\n':
             print("new line")
             inDialogueBlock = False
             endOfDialogueBlock = True
-
         else:
             quote.append(line)
 
@@ -59,9 +58,9 @@ for line in lines:
     # character in the dictionary at next index in list
     if endOfDialogueBlock:
 
-        print("Quote is:")
-        print(quote)
-        print("---------------------")
+        # print("Quote is:")
+        # print(quote)
+        # print("---------------------")
 
         characterDict[uppercase[i]].append(quote)
         quote = []
@@ -86,40 +85,21 @@ for line in lines:
 
         if foundCharacterName == True:
 
-            # print(name)
+            print(line)
 
-            # check that this starts a speaking section
-            # and is not part of a scene description
-            if re.search("   " + str(uppercase[i]) + "\n", line):
-                block = True
-            else:
-                block = False
+            # check that this starts a speaking section and is
+            # not part of a scene description. If it is a voice
+            # over (V.O.), continuation (CONT'D) or a line off
+            # screen (O.S) then the character name will not be
+            # followed by a newline
+            if (re.search("   " + str(uppercase[i]) + "\n", line)) or (
+                    "(O.S)" or "(V.O.)" or "(CONT'D)" in line):
 
-            # if it is a voice over (V.O.) then
-            # character name will not be followed by newline
-            if re.findall(r"\B\(V\.O\.\)", line):
-                voiceOver = True
-            else:
-                voiceOver = False
-
-            # if it is continuation (CONT'D) then
-            # character name will not be followed by newline
-            if re.findall(r"\(CONT\'D\)\B", line):
-                continuation = True
-            else:
-                continuation = False
-
-            # if it is a line off screen (O.S) then
-            # character name will not be followed by newline
-            if re.findall(r"\(O\.S\.\)\B", line):
-                offScreen = True
-            else:
-                offScreen = False
-
-            if block or voiceOver or continuation or offScreen:
                 inDialogueBlock = True
+                print(str(inDialogueBlock))
             else:
                 inDialogueBlock = False
+                print(str(inDialogueBlock))
 
 # for key, value in characterDict.items():
 #     print(key)
