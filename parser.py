@@ -39,7 +39,7 @@ foundCharacterName = False
 for line in lines:
 
     input(" ")
-    print(line)
+    # print(line)
 
     # character name was found, add line to quote text
     if inDialogueBlock:
@@ -47,15 +47,18 @@ for line in lines:
         print("---------------------")
         print("Block started:")
 
-        quote.append(line)
-        inDialogueBlock = False
-        endOfDialogueBlock = True
+        if line == '\n':
+            print("new line")
+            inDialogueBlock = False
+            endOfDialogueBlock = True
+
+        else:
+            quote.append(line)
 
     # charcter dialouge ended, append quote to corresponding
     # character in the dictionary at next index in list
     if endOfDialogueBlock:
 
-        print("Block Ended")
         print("Quote is:")
         print(quote)
         print("---------------------")
@@ -75,20 +78,15 @@ for line in lines:
     name = ""
     if index > 0:
         while i < index:
-
-            print(uppercase[i] + " i = " + str(i) + " index = " + str(index))
-
             if uppercase[i] in characterList:
-
                 name = uppercase[i]
-                print("Found name: " + name)
                 foundCharacterName = True
                 break
             i = i+1
 
         if foundCharacterName == True:
 
-            print(name)
+            # print(name)
 
             # check that this starts a speaking section
             # and is not part of a scene description
@@ -123,5 +121,7 @@ for line in lines:
             else:
                 inDialogueBlock = False
 
-for x, y in characterDict.items():
-    print(x, y)
+# for key, value in characterDict.items():
+#     print(key)
+#     for a in value:
+#         print(a)
