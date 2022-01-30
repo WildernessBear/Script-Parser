@@ -42,7 +42,7 @@ for line in lines:
     # then dialogue is over
     if inDialogueBlock:
 
-        if line == '\n':
+        if line.isspace():
             inDialogueBlock = False
             endOfDialogueBlock = True
         else:
