@@ -3467,8 +3467,9 @@ the other side...
             Arwen, I have come here to help you.
                 (urgent)
             Lasto Beth nin, tolo Dan na ngalad. Hear
-            my voice, come back to the light. Frodo's
-            eyes close.
+            my voice, come back to the light. 
+            
+Frodo's eyes close.
 
                       PIPPIN
             Who is she?
