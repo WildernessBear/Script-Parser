@@ -29,36 +29,34 @@ for name in names:
 with open(file, 'r') as f:
     lines = f.readlines()
 
-
+currName = ''
 quote = []
 uppercase = []
 inDialogueBlock = False
 endOfDialogueBlock = False
-currName = ''
 
 for line in lines:
 
-    # character name was found, add line to quote text
+    # character name was found. Strip additional whitespace from
+    # following line and append to quote text. If \n or empty list
+    # then dialogue is over
     if inDialogueBlock:
-
-        # print("---------------------")
-        # print("Block started:")
 
         if line == '\n':
             inDialogueBlock = False
             endOfDialogueBlock = True
         else:
+            line = line.strip()
             quote.append(line)
 
-    # charcter dialouge ended, append quote to corresponding
-    # character in the dictionary at next index in list
+    # charcter dialouge ended. Check there is text inside quaote
+    # and then append it to the corresponding character in the
+    # dictionary at next index in list
     if endOfDialogueBlock:
 
-        # print("Quote is:")
-        # print(quote)
-        # print("---------------------")
+        if len(quote) != 0:
+            characterDict[currName].append(quote)
 
-        characterDict[currName].append(quote)
         quote = []
         inDialogueBlock = False
         endOfDialogueBlock = False
