@@ -8,7 +8,7 @@ BLACK CONTINUES... ELVISH SINGING....A WOMAN'S VOICE IS
 whispering, tinged with SADNESS and REGRET:
 
                     GALADRIEL (V.O.)
-              (Elvish: subtitled)
+              (Elvish: with subtitles)
           "I amar prestar sen: han mathon ne nen,
           han mathon ne chae...a han noston ned
           wilith."
@@ -863,8 +863,9 @@ of Gandalf's wagon, snatching up a small firework
                     MERRY
               (urgent whisper)
           No, no..the big one...the big one! Pippin
-          grabs a huge rocket. CLOSE ON: FIREWORK
-          FUSE crackles with flame!
+          grabs a huge rocket. 
+          
+CLOSE ON: FIREWORK FUSE crackles with flame!
 
 Merry is holding out the big rocket...he looks aghast at the
 fizzing fuse that Pippin has just lit.
@@ -1003,9 +1004,10 @@ CONTINUED:
 
                     BILBO (CONT'D)
           I have..things to do and I have put this
-          off for far too long... CLOSE ON: BILBO'S
-          knuckles turn white as he tightens his
-          grip on the small object behind his back.
+          off for far too long... 
+          
+CLOSE ON: BILBO'S knuckles turn white as he tightens his
+grip on the small object behind his back.
 
                     BILBO (CONT'D)
           I regret to announce, this is the end. I
@@ -1422,11 +1424,9 @@ CONTINUED:
           It shall be an heirloom of my
           Kingdom...all those who follow in my
           bloodline shall be bound to its fate, for
-          I will risk no hurt to the
-
-                    GANDALF (CONT'D)
-          ring...it is precious to me, though I buy
-          it with great pain...
+          I will risk no hurt to the ring... it
+          is precious to me, though I buy it with 
+          great pain...
 
 CLOSE ON: ELVISH LETTERING MARKS ON THE FADED OLD DOCUMENT
 
@@ -3462,7 +3462,7 @@ FLASH INSERT: An ethereal vision of ARWEN, as she appears on
 the other side...
 
                       ARWEN
-                (ELVISH: with sub titles)
+                (ELVISH: with subtitles)
             Frodo, Im Arwen...telin let thaed. I am
             Arwen, I have come here to help you.
                 (urgent)
@@ -4197,7 +4197,7 @@ CONTINUED:
           same evil...and you will defeat it.
 
                     ARWEN
-              (Elvish: w/subtitles)
+              (Elvish: with subtitles)
           A si i-duath u-orthor, Aragorn...u or le
           a u or nin. The shadow does not hold
           sway yet...not over you and not over me.
@@ -4436,14 +4436,12 @@ CONTINUED: (3)
 
                     GIMLI
           I will be dead before I see the Ring in
-          the hands of an Elf! A STORM OF ARGUMENT
-          erupts around the room. CLOSE ON:
-          FRODO...sound disappears as he watches in
-          slow
-
-motion...the angry faces, the shaking fists, the accusatory
-fingers, his eyes move across to the ring...the hum grows
-louder in his head.
+          the hands of an Elf! 
+          
+A STORM OF ARGUMENT erupts around the room. CLOSE ON: FRODO...
+sound disappears as he watches in slow motion...the angry 
+faces, the shaking fists, the accusatory fingers, his eyes 
+move across to the ring...the hum grows louder in his head.
 
                     GIMLI (CONT'D)
               (shouting)
@@ -4453,10 +4451,10 @@ CLOSE ON: THE RING fills the screen...streams of blood flow
 across the surface... flames flicker within the Gold Band.
 
                     GANDALF
-          Do you not understand? While we    bicker
-          among ourselves, Sauron's power   grows!
-          No one will escape it. You will   all be
-          destroyed, your homes burnt and   your
+          Do you not understand? While we bicker
+          among ourselves, Sauron's power grows!
+          No one will escape it. You will all be
+          destroyed, your homes burnt and your
           families put to the sword!
 
 CLOSE ON: FRODO...breathing rapidly, Caught in the grip of
@@ -4731,10 +4729,9 @@ CONTINUED: (2)
           Hide!
 
                     BOROMIR
-          Merry..Pippin...Sam...take cover! WIDE
-          ON: THE FELLOWSHIP scramble under what
-          little cover
-
+          Merry..Pippin...Sam...take cover! 
+          
+WIDE ON: THE FELLOWSHIP scramble under what little cover
 there is...as a regiment of Large crows fly low overhead at
 Great speed, wheeling and circling above. As their dark
 shadow passes over the fellowship, a single harsh croak is
@@ -5007,10 +5004,10 @@ the Pony.
 
                     ARAGORN
           Go on, Bill, go on..don't worry, Sam...he
-          knows his way home. Aragorn slaps Bill on
-          the rump...Bill goes trotting off. CLOSE
-          ON: Sam watching Bill disappear into the
-          darkness.
+          knows his way home. 
+          
+Aragorn slaps Bill on the rump...Bill goes trotting off. CLOSE
+ON: Sam watching Bill disappear into the darkness.
 
                     SAM
           Goodbye, Bill.
@@ -5896,11 +5893,10 @@ Galadriel's eyes settle on Sam.
                     GALADRIEL (CONT'D)
           Tonight you will sleep in peace.
               (whispered v/o)
-          Welcome, Frodo of the Shire... CLOSE ON:
-          FRODO looks at GALADRIEL. SUDDEN INSERT:
-          GALADRIEL as she is on the other
-
-side... Powerful, divine...no longer of this world..a
+          Welcome, Frodo of the Shire... 
+          
+CLOSE ON: FRODO looks at GALADRIEL. SUDDEN INSERT: GALADRIEL as she 
+is on the otherside... Powerful, divine...no longer of this world..a
 Piercing white light surrounds her.
 
                     GALADRIEL (V.O.) (CONT'D)
@@ -6512,8 +6508,9 @@ Frodo looks up as Aragorn towers over him.
 
                      FRODO
               (numb)
-          It has taken Boromir. ARAGORN moves
-          towards Frodo...
+          It has taken Boromir. 
+        
+ARAGORN moves towards Frodo...
 
                     ARAGORN
               (urgent)
@@ -6661,8 +6658,11 @@ chest. Amazingly, Boromir continues fighting, but another
 arrow...and another, brings him to his knees. Merry and
 Pippin are scooped off their feet by URUK-HAI.
 
-                        MERRY & PIPPIN
-          Aaaaagh!      Boromir! Boromir!
+                        MERRY
+          Aaaaagh!   Boromir! Boromir!
+
+                        PIPPIN
+          Aaaaagh!   Boromir! Boromir!
 
 Lurtz aims his bow at Boromir's heart... suddenly Aragorn
 charges at him, smashing the Bow with his sword. They lock
@@ -6675,15 +6675,16 @@ in two.
                     BOROMIR
               (painful gasp)
           They took the little ones...
+
                     (MORE)
 
                                                    (CONTINUED)
 
                                                             114.
 CONTINUED: (2)
-                    BOROMIR (CONT'D)
-          Aragorn quickly tries to staunch the flow
-          of Blood from Boromir's shoulder.
+    
+Aragorn quickly tries to staunch the flow of Blood from Boromir's 
+shoulder.
 
                     BOROMIR (CONT'D)
               (panicked)
@@ -6695,7 +6696,7 @@ CONTINUED: (2)
 Boromir holds Aragorn's gaze.
 
                     BOROMIR
-          Then you did what I could not.   I tried
+          Then you did what I could not. I tried
           to take the ring from him.
 
                     ARAGORN
@@ -6707,8 +6708,9 @@ Boromir holds Aragorn's gaze.
 
                     ARAGORN
           No, Boromir. You fought bravely. You
-          have kept your honor. Aragorn tries to
-          bind Boromir's wound.
+          have kept your honor. 
+
+Aragorn tries to bind Boromir's wound.
 
                     BOROMIR
           Leave it! It is over...the world of Men
@@ -6729,12 +6731,15 @@ fingers tighten around the hilt.
 
                     BOROMIR (CONT'D)
           I would have followed you, my
-          brother...my captain, my King. Aragorn
-          lays Boromir down. He is dead.
+          brother...my captain, my King. 
+          
+Aragorn lays Boromir down. He is dead.
 
                     ARAGORN
-          Be at peace, son of Gondor. Aragorn bends
-          and Kisses Boromir's forehead.
+          Be at peace, son of Gondor. 
+          
+Aragorn bends and Kisses Boromir's forehead.
+
                     (MORE)
 
                                                      (CONTINUED)
@@ -6780,10 +6785,9 @@ toward the lake...Frodo is already paddling away.
 
                      SAM
                (anguished)
-           Not alone, Frodo. Mr. Frodo! Frodo, in
-           the boat, paddling steadfastly away from
-           the
-
+           Not alone, Frodo. Mr. Frodo! 
+           
+Frodo, in the boat, paddling steadfastly away from the
 shore..tears in his eyes..the voice of Sam carried on the
 wind. Frodo whispers to himself
 
@@ -6804,7 +6808,7 @@ CONTINUED:
 
 
                     FRODO (CONT'D)
-          Go back,Sam. I'm going to Mordor alone.
+          Go back, Sam. I'm going to Mordor alone.
 
 Sam splashes hopelessly toward the boat.
 
@@ -6893,8 +6897,8 @@ on.
 
                     ARAGORN (CONT'D)
           Leave all that can be spared behind...
-          CLOSE ON: ARAGORN..a steely light in his
-          eye.
+
+CLOSE ON: ARAGORN..a steely light in his eye.
 
                     ARAGORN (CONT'D)
               (grimly)
