@@ -19,9 +19,9 @@ characterList = []
 characterDict = {}
 for name in names:
 
-    # remove newline chars from names in nameFile then
-    # save characters in list to check while iterating
-    # through script and also as an empty nested ditionary
+    # remove newline chars from names in nameFile then save characters
+    # in list to check while iterating through script and also as an
+    # empty nested ditionary
     name = name.rstrip()
     characterList.append(name)
     characterDict[name] = []
@@ -34,12 +34,9 @@ quote = []
 uppercase = []
 inDialogueBlock = False
 endOfDialogueBlock = False
-foundCharacterName = False
+currName = ''
 
 for line in lines:
-
-    #input(" ")
-    # print(line)
 
     # character name was found, add line to quote text
     if inDialogueBlock:
@@ -48,7 +45,6 @@ for line in lines:
         # print("Block started:")
 
         if line == '\n':
-            print("new line")
             inDialogueBlock = False
             endOfDialogueBlock = True
         else:
@@ -62,46 +58,26 @@ for line in lines:
         # print(quote)
         # print("---------------------")
 
-        characterDict[uppercase[i]].append(quote)
+        characterDict[currName].append(quote)
         quote = []
         inDialogueBlock = False
         endOfDialogueBlock = False
+        currName = ''
 
-    # find uppercase words in script then check
-    # if uppercase word is also a main character
-    i = 0
-    foundCharacterName = False
-    uppercase = re.findall(r"(\b[A-Z][A-Z]+(?:\s+[A-Z]+)*\b)", line)
-    index = len(uppercase)
+    # search for main characters in script
+    for searchName in characterList:
+        if searchName in line:
 
-    name = ""
-    if index > 0:
-        while i < index:
-            if uppercase[i] in characterList:
-                name = uppercase[i]
-                foundCharacterName = True
-                break
-            i = i+1
-
-        if foundCharacterName == True:
-
-            print(line)
-
-            # check that this starts a speaking section and is
-            # not part of a scene description. If it is a voice
-            # over (V.O.), continuation (CONT'D) or a line off
-            # screen (O.S) then the character name will not be
-            # followed by a newline
-            if (re.search("   " + str(uppercase[i]) + "\n", line)) or (
-                    "(O.S)" or "(V.O.)" or "(CONT'D)" in line):
-
+            # check that this starts a dialogue and is not part of a scene
+            # description. Name will be followed by a newline, (V.O.) voice
+            # over, (CONT'D) continuation or (O.S) off screen line
+            if (re.search("   " + searchName + "\n", line)) or ("(O.S)" or "(V.O.)" or "(CONT'D)" in line):
                 inDialogueBlock = True
-                print(str(inDialogueBlock))
+                currName = searchName
             else:
                 inDialogueBlock = False
-                print(str(inDialogueBlock))
 
-# for key, value in characterDict.items():
-#     print(key)
-#     for a in value:
-#         print(a)
+for key, value in characterDict.items():
+    print(key)
+    for a in value:
+        print(a)
