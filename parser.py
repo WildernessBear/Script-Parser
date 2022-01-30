@@ -1,3 +1,4 @@
+########################################################################
 # parser.py
 #
 # parser.py reads in the character names from names_*file*.txt and saves
@@ -5,9 +6,8 @@
 # are placed into a dictionary as keys and thier corresponding value is
 # a nested empty list. The nested list will hold the character lines in
 # the order they appear from the script in *file*.txt
-##########################################################################
-import re
 
+########################################################################
 # def readFile(file):
 # read in files
 
@@ -18,6 +18,7 @@ def readFile(file):
     return text
 
 
+#########################################################################
 # def populateCharacterNames(names):
 # remove newline chars from names in names_*file*.txt then save
 # characters in list to check while iterating through script and
@@ -33,25 +34,37 @@ def populateCharacterNames(names):
         characterDict[name] = []
     return characterList, characterDict
 
+########################################################################
+# def printPretty(characterDict):
+# prints the dictionary in a readable format
+
 
 def printPretty(characterDict):
-    for key, value in characterDict.items():
-        e = 1
-        print(key)
-        for a in value:
-            print(str(e) + " " + a)
-            e = e + 1
+    for name, lines in characterDict.items():
+        count = 1
+        print(name)
+        for line in lines:
+            print(str(count) + " " + line)
+            count = count + 1
+        print("\n" + name + " has a total of " + str(count) + " lines\n\n")
     return
 
 
-def main():
+########################################################################
+# def scrubLine(line):
+# remove unnecessary whitespace from lines and also remove words that
+# are surrounded by parenthesis. These are actions, not dialogue
+def scrubLine(line):
+    line = line.strip()
+    #remove = line.find("(")
+    return line
 
-    # replace with files to be read
-    lines = readFile('LOTRsFellowshipOfTheRing.txt')
-    names = readFile('names_LOTRsFellowshipOfTheRing.txt')
+########################################################################
+# def parser(characterList, characterDict, lines):
+# parses the script into a dictionary by character name and line
 
-    characterList, characterDict = populateCharacterNames(names)
 
+def parser(characterList, characterDict, lines):
     currName = ''
     quote = ''
     inDialogueBlock = False
@@ -59,17 +72,21 @@ def main():
 
     for line in lines:
 
-        # character name was found. Strip additional whitespace from
-        # following line and append to quote text. If \n or empty list
-        # then dialogue is over
+        # character name was found. Scrub additional whitespace from
+        # following line and action words in parenthesis then append
+        # to quote text. If newline then the dialogue is over
         if inDialogueBlock:
 
             if line.isspace():
                 inDialogueBlock = False
                 endOfDialogueBlock = True
             else:
-                line = line.strip()
-                quote = quote + " " + line
+                line = scrubLine(line)
+
+                if len(quote) > 0:
+                    quote = quote + " " + line
+                else:
+                    quote = line
 
         # charcter dialouge ended. Check there is text inside quote
         # and then append it to the corresponding character in the
@@ -92,6 +109,19 @@ def main():
                     currName = searchName
                 else:
                     inDialogueBlock = False
+
+    return characterDict
+
+
+def main():
+
+    # replace with files to be read
+    lines = readFile('LOTRsFellowshipOfTheRing.txt')
+    names = readFile('names_LOTRsFellowshipOfTheRing.txt')
+
+    characterList, characterDict = populateCharacterNames(names)
+
+    characterDict = parser(characterList, characterDict, lines)
 
     printPretty(characterDict)
 
