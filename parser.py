@@ -30,7 +30,7 @@ with open(file, 'r') as f:
     lines = f.readlines()
 
 currName = ''
-quote = []
+quote = ''
 uppercase = []
 inDialogueBlock = False
 endOfDialogueBlock = False
@@ -47,7 +47,7 @@ for line in lines:
             endOfDialogueBlock = True
         else:
             line = line.strip()
-            quote.append(line)
+            quote = quote + " " + line
 
     # charcter dialouge ended. Check there is text inside quaote
     # and then append it to the corresponding character in the
@@ -57,7 +57,7 @@ for line in lines:
         if len(quote) != 0:
             characterDict[currName].append(quote)
 
-        quote = []
+        quote = ''
         inDialogueBlock = False
         endOfDialogueBlock = False
         currName = ''

@@ -3336,13 +3336,13 @@ hobbits are carrying Flaming torches for protection.
           Hold on, Frodo.
 
                      SAM
-          He'll never make it! Close on:
-          Frodo...head lolling about, barely
-          conscious.
+          He'll never make it! 
+
+Close on: Frodo...head lolling about, barely conscious.
 
                     FRODO
               (fevered calling)
-          Gandalf...Gandalf?
+          Gandalf... Gandalf?
 
 EXT. ISENGARD -- NIGHT
 
@@ -3491,9 +3491,9 @@ with tousled hair, dressed in mud-splattered riding clothes.
 
                     ARWEN
           He's fading...he's not gong to last. We
-          must get him to my father. Strider
-          quickly lifts Frodo...placing him on the
-          horse.
+          must get him to my father. 
+
+Strider quickly lifts Frodo...placing him on the horse.
 
                     ARWEN (CONT'D)
           I have been looking for you for two days.
@@ -3508,22 +3508,24 @@ with tousled hair, dressed in mud-splattered riding clothes.
                     STRIDER
               (ELVISH: with subtitles)
           Dartho guin Berian...rych le ad
-          tolthathon. Stay with the hobbits...I'11
-          send horses for you. Close on: Arwen
-          grabbing the Reins of the horse.
+          tolthathon. Stay with the hobbits...I'll
+          send horses for you. 
+          
+Close on: Arwen grabbing the Reins of the horse.
 
                     ARWEN
-              (ELVISH: w/subtitles)
+              (ELVISH: with subtitles)
           Hon mabathon. Rochoh ellint im. I'll
-          take him. I'm the faster rider. Strider
-          clamps his hand over Arwen's.
+          take him. I'm the faster rider. 
+          
+Strider clamps his hand over Arwen's.
 
                     STRIDER
-              (elvish:subtitles)
+              (ELVISH: with subtitles)
           Andelu I ven. The road is too dangerous.
 
                     ARWEN
-              (Elvish: subtitles)
+              (ELVISH: with subtitles)
           Frodo Fir. Ae anthradon I hir, tur
           gwaith nin beriatha hon. If I can cross
           the river, the power of my people can
@@ -4152,8 +4154,9 @@ Elendil, which lies on a cloth-covered plinth.
           The shards of Narsil...the blade that cut
           the Ring from Sauron's hand. Boromir
           picks up the sword and gently touches the
-          Blade. Close on: a small bloom of blood
-          appears on Boromir's finger...
+          Blade. 
+
+Close on: a small bloom of blood appears on Boromir's finger...
 
                     BOROMIR (CONT'D)
           Still sharp.
@@ -4192,6 +4195,8 @@ CONTINUED:
                     ARWEN
           Your time will come. You will face the
           same evil...and you will defeat it.
+
+                    ARWEN
               (Elvish: w/subtitles)
           A si i-duath u-orthor, Aragorn...u or le
           a u or nin. The shadow does not hold
