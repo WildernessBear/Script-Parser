@@ -49,14 +49,13 @@ for line in lines:
             line = line.strip()
             quote = quote + " " + line
 
-    # charcter dialouge ended. Check there is text inside quaote
+    # charcter dialouge ended. Check there is text inside quote
     # and then append it to the corresponding character in the
     # dictionary at next index in list
     if endOfDialogueBlock:
 
         if len(quote) != 0:
             characterDict[currName].append(quote)
-
         quote = ''
         inDialogueBlock = False
         endOfDialogueBlock = False
@@ -67,15 +66,16 @@ for line in lines:
         if searchName in line:
 
             # check that this starts a dialogue and is not part of a scene
-            # description. Name will be followed by a newline, (V.O.) voice
-            # over, (CONT'D) continuation or (O.S) off screen line
-            if (re.search("   " + searchName + "\n", line)) or ("(O.S)" or "(V.O.)" or "(CONT'D)" in line):
+            # description, line will only be uppercase letters
+            if line.isupper():
                 inDialogueBlock = True
                 currName = searchName
             else:
                 inDialogueBlock = False
 
 for key, value in characterDict.items():
+    e = 1
     print(key)
     for a in value:
-        print(a)
+        print(str(e) + " " + a)
+        e = e + 1
