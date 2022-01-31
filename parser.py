@@ -6,6 +6,7 @@
 # are placed into a dictionary as keys and thier corresponding value is
 # a nested empty list. The nested list will hold the character lines in
 # the order they appear from the script in *file*.txt
+import re
 
 ########################################################################
 # def readFile(file):
@@ -56,8 +57,12 @@ def printPretty(characterDict):
 # are surrounded by parenthesis. These are actions, not dialogue
 def scrubLine(line):
     line = line.strip()
-    #remove = line.find("(")
-    return line
+
+    # no parenthesis
+    if line.find("(") == -1 and line.find(")") == -1:
+        return line
+    else:
+        return ''
 
 ########################################################################
 # def parser(characterList, characterDict, lines):
