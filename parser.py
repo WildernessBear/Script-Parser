@@ -6,7 +6,6 @@
 # are placed into a dictionary as keys and thier corresponding value is
 # a nested empty list. The nested list will hold the character lines in
 # the order they appear from the script in *file*.txt
-import re
 
 ########################################################################
 # def readFile(file):
@@ -127,18 +126,23 @@ def parser(characterList, characterDict, lines):
 
     return characterDict
 
+########################################################################
+########################################################################
+
 
 def main():
 
     # replace with files to be read
-    lines = readFile('LOTRsFellowshipOfTheRing.txt')
-    names = readFile('names_LOTRsFellowshipOfTheRing.txt')
+    lines = readFile('LOTRs1/LOTRsFellowshipOfTheRing.txt')
+    names = readFile('LOTRs1/names_LOTRsFellowshipOfTheRing.txt')
 
     characterList, characterDict = populateCharacterNames(names)
 
     characterDict = parser(characterList, characterDict, lines)
 
-    printPretty(characterDict)
+    # printPretty(characterDict)
+
+    print(characterDict)
 
 
 main()

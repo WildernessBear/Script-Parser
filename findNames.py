@@ -10,7 +10,7 @@
 import re
 
 # update to location of file script to be used
-file = 'LOTRsFellowshipOfTheRing.txt'
+file = 'LOTRs1/LOTRsFellowshipOfTheRing.txt'
 
 with open(file, 'r') as f:
     lines = f.readlines()
