@@ -43,11 +43,10 @@ def populateCharacterNames(names):
 def printPretty(characterDict):
     for name, lines in characterDict.items():
         count = 1
-        print(name)
+        print("\n\n" + name)
         for line in lines:
             print(str(count) + " " + line)
             count = count + 1
-        print("\n" + name + " has a total of " + str(count) + " lines\n\n")
     return
 
 
@@ -56,11 +55,22 @@ def printPretty(characterDict):
 # remove unnecessary whitespace from lines and also remove words that
 # are surrounded by parenthesis. These are actions, not dialogue
 def scrubLine(line):
-    line = line.strip()
 
     # no parenthesis
     if line.find("(") == -1 and line.find(")") == -1:
-        return line
+        fixedLine = ''
+        line = line.strip()
+        splitLine = line.split()
+
+        for num in range(len(splitLine)):
+            if num == 0:
+                fixedLine = splitLine[0]
+            else:
+                fixedLine = fixedLine + " " + splitLine[num]
+
+        return fixedLine
+
+    # remove words in parenthesis by returning an empty string
     else:
         return ''
 
