@@ -9,7 +9,7 @@
 
 ########################################################################
 # def readFile(file):
-# read in files
+# Read in files
 
 
 def readFile(file):
@@ -20,7 +20,7 @@ def readFile(file):
 
 #########################################################################
 # def populateCharacterNames(names):
-# remove newline chars from names in names_*file*.txt then save
+# Remove newline chars from names in names_*file*.txt then save
 # characters in list to check while iterating through script and
 # also as an empty nested ditionary for saving all dialouge
 
@@ -36,7 +36,7 @@ def populateCharacterNames(names):
 
 ########################################################################
 # def printPretty(characterDict):
-# prints the dictionary in a readable format
+# Prints the dictionary in a readable format
 
 
 def printPretty(characterDict):
@@ -51,7 +51,7 @@ def printPretty(characterDict):
 
 ########################################################################
 # def scrubLine(line):
-# remove unnecessary whitespace from lines and also remove words that
+# Remove unnecessary whitespace from lines and also remove words that
 # are surrounded by parenthesis. These are actions, not dialogue
 def scrubLine(line):
 
@@ -75,7 +75,7 @@ def scrubLine(line):
 
 ########################################################################
 # def parser(characterList, characterDict, lines):
-# parses the script into a dictionary by character name and line
+# Parses the script into a dictionary by character name and line
 
 
 def parser(characterList, characterDict, lines):
@@ -127,6 +127,37 @@ def parser(characterList, characterDict, lines):
     return characterDict
 
 ########################################################################
+# def mostCommonWords(characterDict):
+# Call stripAllWords() to strip punctuation from all quotes then iterate
+# through all stripped words and create a nested dictionary to hold
+# character names > words > word count tally
+
+
+def mostCommonWords(characterDict):
+    wordDict = {}
+
+    for name, lines in characterDict.items():
+        wordDict[name] = []
+        for line in lines:
+            wordDict[name].append(line)
+
+    #wordDict = stripAllWords(characterDict)
+    printPretty(wordDict)
+    return
+
+########################################################################
+# def stripAllWords(characterDict):
+# Iterate through all words spoken by chacters and strip any puntuation
+# from it, and save it back in dictionary. y
+
+
+def stripAllWords(characterDict):
+    # input("")
+
+    return
+
+
+########################################################################
 ########################################################################
 
 
@@ -135,14 +166,10 @@ def main():
     # replace with files to be read
     lines = readFile('LOTRs1/LOTRsFellowshipOfTheRing.txt')
     names = readFile('LOTRs1/names_LOTRsFellowshipOfTheRing.txt')
-
     characterList, characterDict = populateCharacterNames(names)
-
     characterDict = parser(characterList, characterDict, lines)
 
-    # printPretty(characterDict)
-
-    print(characterDict)
+    mostCommonWords(characterDict)
 
 
 main()
