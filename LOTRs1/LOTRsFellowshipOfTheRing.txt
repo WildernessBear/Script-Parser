@@ -2791,7 +2791,7 @@ INT. PRANCING PONY--CORRIDOR -- NIGHT
 Frodo is roughly pushed against the wall.    The Brooding
 stranger looms over him.
 
-                    STRIDER
+                    ARAGORN
           You draw far too much attention to
           yourself...Mr. Underhill
 
@@ -2804,7 +2804,7 @@ Frodo is pushed into the Hobbit's room by Strider.
                     FRODO
           What do you want?
 
-                    STRIDER
+                    ARAGORN
           A little more caution from you...that is
           no trinket you carry.
 
@@ -2818,7 +2818,7 @@ Frodo is pushed into the Hobbit's room by Strider.
 CONTINUED:
 
 
-                    STRIDER
+                    ARAGORN
           Indeed? I can usually avoid being seen
           if I wish, but to disappear entirely...
           that is a rare gift.
@@ -2826,13 +2826,13 @@ CONTINUED:
                     FRODO
           Who are you?
 
-                    STRIDER
+                    ARAGORN
           Are you frightened?
 
                     FRODO
           Yes.
 
-                    STRIDER
+                    ARAGORN
           Not nearly frightened enough. I know
           what hunts you. Frodo jumps at the sound
           of a noise in the corridor.
@@ -2847,10 +2847,10 @@ a candlestick, and Pippin a chair.
               (angry)
           Let him go or I'll have you, Longshanks!
 
-STRIDER SHEATHS his sword, a slight smile playing on his
+ARAGORN SHEATHS his sword, a slight smile playing on his
 lips.
 
-                    STRIDER
+                    ARAGORN
           You have a stout heart, little Hobbit,
           but that alone won't save you...You can
           no longer wait for the Wizard, Frodo.
@@ -2897,7 +2897,7 @@ raising their SHINING SWORDS ABOVE THE SLEEPING HOBBITS.
 QUICK INSERT: Sam's eyes open wide. In unison, the RINGWRAITS
 STAB THE HOBBITS, in a Slashing, hacking frenzy.
 
-INT. STRIDER'S ROOM -- NIGHT
+INT. ARAGORN'S ROOM -- NIGHT
 
 Strider is grimly listening to the sounds from his room.
 
@@ -2912,7 +2912,7 @@ PIPPIN AND MERRY wake with a start.
 
                                                         CUT TO:
 
-INT. STRIDER'S ROOM -- NIGHT
+INT. ARAGORN'S ROOM -- NIGHT
 
 WIDE ON: Sam, Merry, and Pippin have been sleeping on
 Strider's bed. Frodo stands next to Strider by the window,
@@ -2922,7 +2922,7 @@ across the courtyard from the Hobbits room.
                     FRODO
           Where are they?
 
-                    STRIDER
+                    ARAGORN
           They were once men. 
 
 Strider glances quickly at Frodo, then looks away...
@@ -2935,7 +2935,7 @@ Strider glances quickly at Frodo, then looks away...
 CONTINUED:
 
 
-                    STRIDER (V.O.) (CONT'D)
+                    ARAGORN (V.O.) (CONT'D)
               (quietly)
           Great Kings of men. Then Sauron the
           deceiver gave to them Nine Rings of
@@ -2949,7 +2949,7 @@ the Bree Streets. CLOSE ON: Strider turns back to the
 Hobbits, his face lit faintly by the Glowing Embers of the
 Fire.
 
-                    STRIDER (CONT'D)
+                    ARAGORN (CONT'D)
           They are the Nazgul, Ringwraiths, neither
           living or dead. At all times they feel
           the presence of the ring...drawn to the
@@ -2962,14 +2962,14 @@ EXT. CHETWOOD FOREST -- DAY
 
                                                       ANGLE ON:
 
-STRIDER, MERRY, PIPPIN, AND FRODO march through a gloomy,
+ARAGORN, MERRY, PIPPIN, AND FRODO march through a gloomy,
 overgrown forest. Sam follows at the read leading "Bill", a
 scrawny pony, who is laden with supplies.
 
                     FRODO
           Where are you taking us?
 
-                    STRIDER
+                    ARAGORN
           Into the wild.
 
 Frodo watches uneasily as Strider moves off into the cover of
@@ -2983,7 +2983,7 @@ the trees...
                     FRODO
           We have no choice but to trust him.
 
-                    STRIDER
+                    ARAGORN
           But where is he leading us?
 
                                                       ANGLE ON:
@@ -2997,7 +2997,7 @@ CONTINUED:
 
 Strider stops, casts a glance back at Sam.
 
-                    STRIDER (CONT'D)
+                    ARAGORN (CONT'D)
           To Rivendell, Master Gamgee...to the
           house of Elrond.
 
@@ -3017,14 +3017,14 @@ Aerial on: Strider leading Frodo, Sam, Merry, and Pippin
 across the windswept moors. The hobbits suddenly stop and
 unstrap their knapsacks.
 
-                     STRIDER
+                     ARAGORN
           Gentlemen, we do not stop until
           nightfall.
 
                     PIPPIN
           What about breakfast?
 
-                    STRIDER
+                    ARAGORN
           You've already had it.
 
                     PIPPIN
@@ -3282,7 +3282,7 @@ blade.
                     SAM (CONT'D)
           Help him, Strider!
 
-                     STRIDER
+                     ARAGORN
               (grim)
           He's been stabbed by a Morgul blade. The
           Morgul Blade suddenly melts...vanishing
@@ -3299,7 +3299,7 @@ CONTINUED: (2)
                     SAM
           Do something.
 
-                    STRIDER
+                    ARAGORN
           This is beyond my skill to heal.
               (urgently)
           He needs Elvish medicine. 
@@ -3312,7 +3312,7 @@ Strider is jogging grimly, carrying an ailing Frodo on his
 back. Sam, Merry, and Pippin are running to keep up. The
 hobbits are carrying Flaming torches for protection.
 
-                    STRIDER
+                    ARAGORN
           Hurry!
 
                     SAM
@@ -3320,7 +3320,7 @@ hobbits are carrying Flaming torches for protection.
           
 Frodo groans.
 
-                    STRIDER
+                    ARAGORN
           Hold on, Frodo.
 
                      SAM
@@ -3385,7 +3385,7 @@ rimmed...his brow, beaded with sweat.
 Frodo's breathing is getting shallow. Strider looks out into
 the darkness.
 
-                    STRIDER
+                    ARAGORN
           No. He is passing into the shadow world,
           he will soon become a wraith like them.
 
@@ -3397,7 +3397,7 @@ A DISTANT CRY of a RINGWRAITH carries through the air.
 
 Frodo gasps in sudden pain.
 
-                    STRIDER
+                    ARAGORN
               (thinking hard)
           Sam, do you know the Athelas plant? 
           
@@ -3406,7 +3406,7 @@ Sam looks blank.
                        SAM
           Athelas?
 
-                       STRIDER
+                       ARAGORN
           Kingsfoil.
 
                        SAM
@@ -3420,7 +3420,7 @@ Sam looks blank.
 CONTINUED:
 
 
-                      STRIDER
+                      ARAGORN
             It may help to slow the poison. Hurry!
 
                                                         CUT TO:
@@ -3432,7 +3432,7 @@ the Athelas plant. Close on: A small, white flowered plant!
 Strider drops to one knee, carefully pulling it from the
 ground.
 
-SUDDENLY!    STRIDER FREEZES AS A SWORD BLADE TOUCHES HIS NECK.
+SUDDENLY!    ARAGORN FREEZES AS A SWORD BLADE TOUCHES HIS NECK.
 
                       ARWEN (O.S.)
             What is this? A Ranger caught off his
@@ -3496,7 +3496,7 @@ Strider quickly lifts Frodo...placing him on the horse.
           There are five Wraiths behind you, where
           the other four are, I do not know.
 
-                    STRIDER
+                    ARAGORN
               (ELVISH: with subtitles)
           Dartho guin Berian...rych le ad
           tolthathon. Stay with the hobbits...I'll
@@ -3511,7 +3511,7 @@ Close on: Arwen grabbing the Reins of the horse.
           
 Strider clamps his hand over Arwen's.
 
-                    STRIDER
+                    ARAGORN
               (ELVISH: with subtitles)
           Andelu I ven. The road is too dangerous.
 
@@ -3544,7 +3544,7 @@ go.
 
 Arwen mounts her horse, ALSFORTH...
 
-                    STRIDER
+                    ARAGORN
           Arwen...ride hard, don't look back.
 
                                                      ANGLE ON:
@@ -4170,7 +4170,7 @@ behind him.
           Isildur's heir...not Isildur himself. You
           are not bound to his fate.
 
-                    STRIDER
+                    ARAGORN
           The same blood flows in my veins...the
           same weakness...
 
@@ -4209,7 +4209,7 @@ Arwen's breast shines in the moonlight.
           Renech I lu I erui govannem?   Do you
           remember when we first met?
 
-                    STRIDER
+                    ARAGORN
               (Elvish: with subtitles)
           Nauthannim I ned ol reniannen.   I thought
           I had strayed into a dream.
@@ -4232,7 +4232,7 @@ Arwen looks into Strider's eyes.
           
 Arwen reaches for Strider's hand...
 
-                    STRIDER
+                    ARAGORN
               (quietly)
           You said you'd bind yourself to me,
           forsaking the immortal life of your
@@ -4256,7 +4256,7 @@ Strider looks down. In his hand lies the Evenstar.
                     ARWEN (CONT'D)
           I choose a mortal live.
 
-                    STRIDER
+                    ARAGORN
           You cannot give me this.
 
                     ARWEN
@@ -4319,7 +4319,7 @@ CONTINUED:
           safe. Give Gondor the weapon of the
           enemy...let us use it against him!
 
-                    STRIDER
+                    ARAGORN
           You cannot wield it. None of us can.
           The one ring answers to Sauron alone...it
           has no other master. 
