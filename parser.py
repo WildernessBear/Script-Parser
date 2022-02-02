@@ -134,27 +134,40 @@ def parser(characterList, characterDict, lines):
 
 
 def mostCommonWords(characterDict):
-    wordDict = {}
-
-    for name, lines in characterDict.items():
-        wordDict[name] = []
-        for line in lines:
-            wordDict[name].append(line)
-
-    #wordDict = stripAllWords(characterDict)
+    wordDict = stripAllWords(characterDict)
     printPretty(wordDict)
     return
 
 ########################################################################
 # def stripAllWords(characterDict):
-# Iterate through all words spoken by chacters and strip any puntuation
-# from it, and save it back in dictionary. y
+# Iterate through all words spoken by chacters and strip any punctuation
+# from it, and save it back in new dictionary.
 
 
 def stripAllWords(characterDict):
-    # input("")
+    wordDict = {}
 
-    return
+    for name, lines in characterDict.items():
+
+        # append character name as key
+        wordDict[name] = []
+        for line in lines:
+
+            # make all letters lowercase
+            line = line.lower()
+
+            # remove all punctuation from words
+            for ch in ['.', '?', ':', '&', '!', '-', '"', ',', ';', '\'']:
+                if ch in line:
+                    line = line.replace(ch, ' ')
+
+            # split into individual words and append to end of list
+            split = line.split()
+            for word in split:
+                word = word.strip()
+                wordDict[name].append(word)
+
+    return wordDict
 
 
 ########################################################################
