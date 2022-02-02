@@ -11,12 +11,10 @@
 # def readFile(file):
 # Read in files
 
-
 def readFile(file):
     with open(file, 'r') as f:
         text = f.readlines()
     return text
-
 
 #########################################################################
 # def populateCharacterNames(names):
@@ -53,6 +51,8 @@ def printPretty(characterDict):
 # def scrubLine(line):
 # Remove unnecessary whitespace from lines and also remove words that
 # are surrounded by parenthesis. These are actions, not dialogue
+
+
 def scrubLine(line):
 
     # no parenthesis
@@ -72,6 +72,7 @@ def scrubLine(line):
     # remove words in parenthesis by returning an empty string
     else:
         return ''
+
 
 ########################################################################
 # def parser(characterList, characterDict, lines):
@@ -126,6 +127,7 @@ def parser(characterList, characterDict, lines):
 
     return characterDict
 
+
 ########################################################################
 # def mostCommonWords(characterDict):
 # Call stripAllWords() to strip punctuation from all quotes then iterate
@@ -135,8 +137,8 @@ def parser(characterList, characterDict, lines):
 
 def mostCommonWords(characterDict):
     wordDict = stripAllWords(characterDict)
-    printPretty(wordDict)
-    return
+    printNumWords(wordDict)
+
 
 ########################################################################
 # def stripAllWords(characterDict):
@@ -145,18 +147,14 @@ def mostCommonWords(characterDict):
 
 
 def stripAllWords(characterDict):
+    # append character name as key to new dictionary
     wordDict = {}
-
     for name, lines in characterDict.items():
-
-        # append character name as key
         wordDict[name] = []
         for line in lines:
 
-            # make all letters lowercase
+            # make all letters lowercase and remove all punctuation
             line = line.lower()
-
-            # remove all punctuation from words
             for ch in ['.', '?', ':', '&', '!', '-', '"', ',', ';', '\'']:
                 if ch in line:
                     line = line.replace(ch, ' ')
@@ -168,6 +166,18 @@ def stripAllWords(characterDict):
                 wordDict[name].append(word)
 
     return wordDict
+
+########################################################################
+# def printNumWords(wordDict):
+# Print out the name and word count per character
+
+
+def printNumWords(wordDict):
+    print("")
+    print("Total words spoken per character:")
+    for name, words in wordDict.items():
+        print(name + ": " + str(len(words)) + " words")
+    return
 
 
 ########################################################################
@@ -181,7 +191,7 @@ def main():
     names = readFile('LOTRs1/names_LOTRsFellowshipOfTheRing.txt')
     characterList, characterDict = populateCharacterNames(names)
     characterDict = parser(characterList, characterDict, lines)
-
+    printPretty(characterDict)
     mostCommonWords(characterDict)
 
 
