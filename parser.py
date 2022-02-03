@@ -142,7 +142,6 @@ def mostCommonWordsByCharacter(wordDict, characterList):
     for i in range(length):
         wordList[i] = {}
 
-# name????????????????????
     i = -1
     for name, words in wordDict.items():
         i = i + 1
@@ -154,12 +153,12 @@ def mostCommonWordsByCharacter(wordDict, characterList):
                 wordList[i][word] = count + 1
 
     for i in range(length):
-        print(characterList[i])
+        print('\n' + characterList[i])
         for x in wordList[i]:
             y = wordList[i][x]
-            print(x, y)
 
-    # print(wordList)
+            if y > 2:
+                print(x, y)
 
 ########################################################################
 # def stripAllWords(characterDict):
@@ -215,12 +214,12 @@ def mostCommonWordsOverAll(wordDict):
 def main():
 
     # replace with files to be read
-    lines = readFile('LOTRs1/LOTRsFellowshipOfTheRing.txt')
-    names = readFile('LOTRs1/names_LOTRsFellowshipOfTheRing.txt')
+    lines = readFile('LOTRs3/LOTRsTheReturnOfTheKing.txt')
+    names = readFile('LOTRs3/names_LOTRsTheReturnOfTheKing.txt')
 
     characterList, characterDict = populateCharacterNames(names)
     characterDict = parser(characterList, characterDict, lines)
-    # printPretty(characterDict)
+    printPretty(characterDict)
 
     wordDict = stripAllWords(characterDict)
     mostCommonWordsByCharacter(wordDict, characterList)

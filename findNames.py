@@ -10,9 +10,9 @@
 import re
 
 # update to location of file script to be used
-file = 'LOTRs1/LOTRsFellowshipOfTheRing.txt'
+file = 'LOTRs3\LOTRsTheReturnOfTheKing.txt'
 
-with open(file, 'r') as f:
+with open(file, 'r', encoding='UTF8') as f:
     lines = f.readlines()
 
 characterDict = {}
