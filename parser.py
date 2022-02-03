@@ -130,15 +130,36 @@ def parser(characterList, characterDict, lines):
 
 ########################################################################
 # def mostCommonWords(characterDict):
-# Call stripAllWords() to strip punctuation from all quotes then iterate
-# through all stripped words and create a nested dictionary to hold
-# character names > words > word count tally
+# Create a list that contains as many nested dictionaries as there is
+# characters. Each dictionary key will hold a unique word and the values
+# are words count tally
 
 
-def mostCommonWords(characterDict):
-    wordDict = stripAllWords(characterDict)
-    printNumWords(wordDict)
+def mostCommonWordsByCharacter(wordDict, characterList):
+    length = len(characterList)
+    wordList = [''] * length
 
+    for i in range(length):
+        wordList[i] = {}
+
+# name????????????????????
+    i = -1
+    for name, words in wordDict.items():
+        i = i + 1
+        for word in words:
+            if word not in wordList[i]:
+                wordList[i][word] = 1
+            else:
+                count = wordList[i][word]
+                wordList[i][word] = count + 1
+
+    for i in range(length):
+        print(characterList[i])
+        for x in wordList[i]:
+            y = wordList[i][x]
+            print(x, y)
+
+    # print(wordList)
 
 ########################################################################
 # def stripAllWords(characterDict):
@@ -173,10 +194,17 @@ def stripAllWords(characterDict):
 
 
 def printNumWords(wordDict):
-    print("")
-    print("Total words spoken per character:")
     for name, words in wordDict.items():
-        print(name + ": " + str(len(words)) + " words")
+        print("\t" + name + ": " + str(len(words)) + " words")
+    print()
+    return
+
+########################################################################
+# def mostCommonWordsOverAll(wordDict):
+#
+
+
+def mostCommonWordsOverAll(wordDict):
     return
 
 
@@ -189,10 +217,19 @@ def main():
     # replace with files to be read
     lines = readFile('LOTRs1/LOTRsFellowshipOfTheRing.txt')
     names = readFile('LOTRs1/names_LOTRsFellowshipOfTheRing.txt')
+
     characterList, characterDict = populateCharacterNames(names)
     characterDict = parser(characterList, characterDict, lines)
-    printPretty(characterDict)
-    mostCommonWords(characterDict)
+    # printPretty(characterDict)
+
+    wordDict = stripAllWords(characterDict)
+    mostCommonWordsByCharacter(wordDict, characterList)
+
+    print('--------------------------------------------------------------------\n\nSpoken words:\n\n')
+    printNumWords(wordDict)
+    print('--------------------------------------------------------------------\n\nSomething:\n\n')
+
+    mostCommonWordsOverAll(wordDict)
 
 
 main()
